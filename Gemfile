@@ -70,3 +70,13 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem 'devise', '~> 4.9', '>= 4.9.3'
+
+gem 'omniauth-google-oauth2', '~> 1.1', '>= 1.1.1'
+
+gem 'omniauth-facebook', '~> 9.0'
+
+gem 'omniauth-rails_csrf_protection', '~> 1.0', '>= 1.0.1'
+
+gem 'twilio-ruby', '~> 6.12'
