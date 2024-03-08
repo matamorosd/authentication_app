@@ -273,7 +273,12 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
   config.omniauth :google_oauth2, Rails.application.credentials.google[:client_id], Rails.application.credentials.google[:client_secret]
-  config.omniauth :facebook, Rails.application.credentials.facebook[:app_id], Rails.application.credentials.facebook[:app_secret], token_params: { parse: :json }
+  config.omniauth :facebook, Rails.application.credentials.facebook[:app_id], Rails.application.credentials.facebook[:app_secret],
+  # scope: 'public_profile, email, user_about_me, user_birthday',
+  # secure_image_url: true,
+  # image_size: :large,
+  # info_fields: 'name,first_name,last_name,email,birthday,gender',
+  token_params: { parse: :json }
 
 
   # ==> Warden configuration
